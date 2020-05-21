@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function mixArray12(x) {
+    let flag = true;
+    let index = 0;
+    for (let i = 0; i<array1.length;i++){
+        if (x == array1[i]){
+            flag = true;
+            index = i;
+            break;
+        } else {
+            flag = false;
+        }
+    }
+    if (flag){
+        alert("ngoi sao"+ x + "thuoc chum sao:" + array2[index]);
+    } else {
+        alert("khong tim thay ngoi sao "+ x );
+    }
+    }
+    let nhapTenNgoiSao = prompt("Nhap Ten Ngoi Sao");
+    mixArray12(nhapTenNgoiSao);
+</script>
+</body>
+</html>

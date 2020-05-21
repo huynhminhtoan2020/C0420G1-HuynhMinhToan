@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>soNguyenTo</title>
+</head>
+<body>
+<script>
+    let abc=parseInt(prompt("nhap so nguyen to"));
+    isPrime(abc);
+    function isPrime(num) {
+        let check = true;
+        for (let i = 2; i < num; i++) {
+            if (num % i == 0) {
+                check = false;
+                break;
+            }
+        }
+        if (check){
+            alert(so+" la so nguyen to");
+        } else {
+            alert(so + " hk phai so nguyen to");
+        }
+    }
+
+</script>
+</body>
+</html>

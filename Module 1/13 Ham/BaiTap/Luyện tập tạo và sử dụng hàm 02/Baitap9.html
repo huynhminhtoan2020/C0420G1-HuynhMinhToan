@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(x) {
+    let array = ["c","f","r","h","k","l","m","o"];
+    let count = 0;
+    for (let i=0;i<array.length;i++){
+        if (array[i] == x){
+            count++;
+
+        }
+    }
+    if (count>0);
+        alert(x + " nam trong mang, xuat hien " + count + " lan.");
+    } else {
+        alert("-1");
+    }
+    }
+    let input = prompt("Nhap ky tu bat ky");
+    check(input);
+    }
+</script>
+</body>
+</html>

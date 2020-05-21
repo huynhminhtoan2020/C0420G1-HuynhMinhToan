@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baiTap4</title>
+</head>
+<body>
+<label>Enter </label>
+<input id="input" oninput="checkNumber(this.value)">
+<p id="display"></p>
+<script>
+
+    function checkNumber(x) {
+        x = parseInt(x);
+        if (!isNaN(x)) {
+            document.getElementById("display").innerHTML = "True";
+        } else {
+            document.getElementById("display").innerHTML = "False";
+        }
+    }
+
+</script>
+</body>
+</html>

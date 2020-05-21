@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Case Study</title>
 </head>
 <body>
-$END$
+<script>
+    let yourName;
+    let idNumber;
+    let yourbirth;
+    let yourEmail;
+    let yourAdd;
+    let customerType;
+    let discount;
+    let qualityservice;
+    let rentDays;
+    let roomType;
+    yourName=prompt("Input Your Name");
+    idNumber=prompt("Input Your ID number or Passport Number");
+    yourbirth=prompt(" Input Your Birth");
+    yourEmail=prompt(" Input Your Email");
+    yourAdd=prompt(" Input Your Address");
+    serviceType = prompt("Service Type")
+    customerType=prompt("Input Your Customer");
+    discount=prompt("Input Your Discount");
+    qualityservice=prompt("Input Your QualityService");
+    rentDays=prompt("Input RentDays");
+    roomType=prompt("Input Room Type");
+    totalpay = customerType*rentDays*(1-discount/100);
+    document.write(`Name: ${yourName} <br/> ID/Passport:${idNumber} <br/> Email:${yourEmail} <br/> Rentdays: ${rentDays} <br/> Room Type : ${roomType} Totalpay : ${totalpay}`);
+
+
+
+</script>
 </body>
 </html>

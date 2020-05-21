@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap3</title>
+</head>
+<body>
+<script>
+    function tinhgiaithua(x) {
+    let result = 1;
+    if (x == 0){
+        result = 1 ;
+    } else {
+        for (let i=1;i<=x;i++);
+        result *=i;
+    }
+    }
+
+    let input = parseInt(prompt("nhap gia tri can tinh giai thua"));
+    alert(input + " giai thua = "+ tinhgiaithua(input));
+    tinhgiaithua(input);
+</script>
+</body>
+</html>

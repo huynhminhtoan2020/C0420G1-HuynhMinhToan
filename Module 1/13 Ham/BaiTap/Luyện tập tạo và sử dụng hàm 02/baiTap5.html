@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>findMinNumber</title>
+</head>
+<body>
+<script>
+    function findMin(a,b,c) {
+    let min =a;
+    if (a>b) {
+        if (c>b){
+            min = b;
+        } else {
+            min = c ;
+        }
+    } else {
+        if (a<c){
+            min =a;
+        } else {
+            min = c;
+        }
+    }
+    return min;
+    }
+    let nhapA=parseInt(prompt("nhap a"));
+    let nhapB=parseInt(prompt("nhap b"));
+    let nhapC=parseInt(prompt("nhap c"));
+
+    alert("Min ="+ findMin(nhapA,nhapB,nhapC));
+</script>
+</body>
+</html>

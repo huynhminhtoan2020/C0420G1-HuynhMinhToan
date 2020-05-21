@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faking Textarea on Typing</title>
+</head>
+<body>
+<textarea  id="text" rows="5" cols="20" oninput="input()"></textarea>
+
+<script>
+   let a = " Hello Fucking guys ";
+   let b = document.getElementById("text");
+   let count=0;
+   function input() {
+       count++;
+       b.value = a.substring(0,count) ;
+       if (a.length==count){
+           count=0;
+       }
+   }
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+</head>
+<canvas id="myCanvas" style="border: 1px solid #000000;" /></canvas>-->
+<body>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+        getArea () {
+            return this.width*this.height;
+    }
+        getPerimeter () {
+            return 2*this.height + 2*this.height;
+        }
+    }
+    let chieuDai = prompt("Nhap Chieu Dai");
+    let ChieuRong = prompt("Nhap Chieu Rong");
+    let rectangle1 = new Rectangle(chieuDai,ChieuRong);
+    let Area = rectangle1.getArea();
+    let Perimeter = rectangle1.getPerimeter();
+    alert ("Dien tich hinh chu nhat la :" + Area  );
+    alert ("Chu Vi hinh chu nhat la :" + Perimeter );
+    document.getElementById("myCanvas").height = ChieuRong;
+    document.getElementById("myCanvas").width = chieuDai;
+
+
+
+</script>
+</body>
+</html>
