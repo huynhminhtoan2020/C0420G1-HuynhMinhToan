@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Insert your strings</label>
+<input id="input1">
+<input id="input2">
+<button id="button" onclick="checkIdentical();">Check Identical</button>
+<div id="display"></div>
+<script>
+    function checkIdentical() {
+        let inputString1 = document.getElementById("input1").value;
+        let inputString2 = document.getElementById("input2").value;
+        let array1 = inputString1.split("");
+        let array2 = inputString2.split("");
+        let flag = true;
+        if (array1.length != array2.length) {
+            document.getElementById("display").innerHTML = "2 chuoi khac nhau";
+        } else {
+            for (let i = 0; i < array1.length; i++) {
+                if (array1[i] != array2[i]) {
+                    flag = false;
+                    break;
+                } else {
+                    flag = true;
+                }
+            }
+            if (flag) {
+                document.getElementById("display").innerHTML = "2 chuoi giong nhau";
+            } else {
+                document.getElementById("display").innerHTML = "2 chuoi khac nhau";
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [1,12,15,14,5,8,78,35,14,2,35,9,8,78,45];
+    let Max = 0;
+    let index = 0;
+    let tong = 0;
+    for (let i =0;i <array.length;i++){
+        tong +=array[i];
+        tb = tong/array.length;
+        if (array[i]>Max) {
+            Max = array[i];
+            input = [i];
+        }
+    }
+    document.write("Max:" + Max+ " Trung Binh :" + tb);
+</script>
+</body>
+</html>

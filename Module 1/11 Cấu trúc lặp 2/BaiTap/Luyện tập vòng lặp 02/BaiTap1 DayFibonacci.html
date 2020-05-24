@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhap so luong day so Fibonacci ban muon hien thi:"));
+    let a1 = 0;
+    let a2 = 1;
+    let temp;
+    let result = "0  1  ";
+    switch (number) {
+        case 1: {
+            document.write("Day so "+ number + " so fibonacci: " + "<br>" + "0");
+            break;
+        }
+        case 2: {
+            document.write("Day so "+ number + " so fibonacci: " + "<br>" + result);
+            break;
+        }
+        default: {
+            for (let i = 3; i <= number; i++) {
+                temp = a2;
+                a2 = a1 + a2;
+                a1 = temp;
+                result += a2 + "  ";
+            }
+            document.write("Day so "+ number + " so fibonacci: " + "<br>" + result);
+        }
+    }
+
+</script>
+</body>
+</html>

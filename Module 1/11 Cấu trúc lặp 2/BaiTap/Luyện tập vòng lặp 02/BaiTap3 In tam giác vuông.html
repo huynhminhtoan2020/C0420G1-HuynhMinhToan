@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let line = "";
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+            line += "*";
+        }
+        line = line + "<br>";
+    }
+    document.write(line);
+
+    document.write("<br>");
+    // Tam giac 2
+    line ="";
+    for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+            line += "*";
+        }
+        line = line + "<br>";
+    }
+    document.write(line);
+
+    document.write("<br>");
+    // Tam giac 3
+    line ="";
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= 1; j--) {
+            if (i >= j) {
+                line += "*";
+            } else {
+                line += "&nbsp;&nbsp;";
+            }
+        }
+        line += "<br>";
+    }
+    document.write(line);
+
+    document.write("<br>");
+    // Tam giac 4
+    line ="";
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+            if (i <= j) {
+                line += "*";
+            } else {
+                line += "&nbsp;&nbsp;";
+            }
+        }
+        line += "<br>";
+    }
+    document.write(line);
+</script>
+</body>
+</html>

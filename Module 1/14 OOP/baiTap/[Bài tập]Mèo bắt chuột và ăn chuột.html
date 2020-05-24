@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Mèo bắt chuột và ăn chuột.</title>
+    <style>
+        .cat {
+            position: absolute;
+        }
+        .mouse{
+            width: 80px;
+            height: 50px;
+            margin-bottom: 23px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <span id="cat"><img src="source.gif" class="cat" style=" top:10px;left: 20px;"></span>
+    <span id="mouse"><img src="alive_mouse.gif" class="mouse" style=" top:90px;left: 300px;"></span>
+    <script>
+        class Rat {
+            constructor(name,weight,speed,status) {
+                this.name = name;
+                this.weight = weight;
+                this.speed = speed;
+                this.status = status;
+                this.top = 90;
+                this.left = 300;
+            }
+            sound() {
+
+            }
+            running_rat() {
+                let result = document.getElementById('mouse');
+                this.left += this.speed;
+                let img = '<img src="alive_mouse.gif" class="mouse" '+'style="top:'+this.top+'px;'+'left:'+this.left+'px;">';
+                result.innerHTML = img;
+            }
+            death_rat() {
+                let result = document.getElementById('mouse');
+                let img = '';
+                result.innerHTML = img;
+            }
+        }
+        class Cat {
+            constructor(name,weight,speed) {
+                this.name = name;
+                this.width = 100;
+                this.height = 80;
+                this.weight = weight;
+                this.speed = speed;
+                this.top = 55;
+                this.left = 20;
+            }
+            sound() {
+
+            }
+            running_cat() {
+                let result = document.getElementById('cat');
+                this.left += this.speed;
+                let img = '<img src="source.gif" class="cat" '+'style="width:'+(this.width+this.weight)+'px;';
+                img += 'height:'+(this.height+this.weight)+'px;'+'top:'+this.top+'px;'+'left:'+this.left+'px;">';
+                result.innerHTML = img;
+                this.catching_rat(rat);
+            }
+            eating_cat() {
+                let result = document.getElementById('cat');
+                let img = '<img src="eating_mouse.webp" class="cat" '+'style="width:'+(this.width+this.weight)+'px;';
+                    img += 'height:'+(this.height+this.weight)+'px;'+'top:'+this.top+'px;'+'left:'+this.left+'px;">';
+                result.innerHTML = img;
+            }
+            catching_rat(rat) {
+                if (this.weight>=80) {
+                    clearInterval(cat1);
+                    clearInterval(rat1);
+                    alert('Tro choi ket thuc!!!Mèo nặng '+this.weight/10+'kg'); }
+                if (this.left+80>=rat.left) {
+                        rat.death_rat();
+                        this.weight += rat.weight/2;
+                        this.speed += 0.1;
+                        rat.left = 300;
+                        this.left = 20;
+                        this.top -= 4;
+                }
+            }
+        }
+        let rat = new Rat('Mickey',10,4,true);
+        let cat = new Cat('Tom',15,5);
+        let rat1 = setInterval(function(){rat.running_rat();},100);
+        let cat1 = setInterval(function(){cat.running_cat();},100);
+    </script>
+</body>
+</html>

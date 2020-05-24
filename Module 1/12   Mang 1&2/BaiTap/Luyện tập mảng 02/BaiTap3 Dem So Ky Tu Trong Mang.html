@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let array = [];
+    let array_length = parseInt(prompt("Nhap Kich Thuoc:"));
+    let count = 0;
+    for (let i = 0; i < array_length; i++){
+        array[i] = prompt("Nhap item: " + i);
+        if (!isNaN(parseInt(array[i]))) {
+            count++;
+        }
+    }
+    document.write("Array: " + array.join(" ") + "<br>");
+    document.write("Co " + count + " ky tu so trong mang.");
+</script>
+</body>
+</html>

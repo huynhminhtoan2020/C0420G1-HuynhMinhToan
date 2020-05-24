@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+<div id="container">
+<img id="img-top" src="GamePuzzleImages/Dog1.1.jpg" onclick="changeImage('top');" width="600">
+<br>
+<img id="img-middle" src="GamePuzzleImages/Dog2.2.jpg" onclick="changeImage('middle');" width="600">
+<br>
+<img id="img-bottom" src="GamePuzzleImages/Dog3.3.jpg" onclick="changeImage('bottom');" width="600">
+</div>
+<script>
+    function changeImage(img_position) {
+        let img_top = document.getElementById("img-top");
+        let img_middle = document.getElementById("img-middle");
+        let img_bottom = document.getElementById("img-bottom");
+        if (img_position == 'top') {
+            if (img_top.getAttribute("src") == "GamePuzzleImages/Dog1.1.jpg") {
+                img_top.src = "GamePuzzleImages/Dog2.1.jpg"
+            } else if (img_top.getAttribute("src") == "GamePuzzleImages/Dog2.1.jpg") {
+                img_top.src = "GamePuzzleImages/Dog3.1.jpg"
+            } else {
+                img_top.src = "GamePuzzleImages/Dog1.1.jpg"
+            }
+        }
+        if (img_position == 'middle') {
+            if (img_middle.getAttribute("src") == "GamePuzzleImages/Dog1.2.jpg") {
+                img_middle.src = "GamePuzzleImages/Dog2.2.jpg"
+            } else if (img_middle.getAttribute("src") == "GamePuzzleImages/Dog2.2.jpg") {
+                img_middle.src = "GamePuzzleImages/Dog3.2.jpg"
+            } else {
+                img_middle.src = "GamePuzzleImages/Dog1.2.jpg"
+            }
+        }
+        if (img_position == 'bottom') {
+            if (img_bottom.getAttribute("src") == "GamePuzzleImages/Dog1.3.jpg") {
+                img_bottom.src = "GamePuzzleImages/Dog2.3.jpg"
+            } else if (img_bottom.getAttribute("src") == "GamePuzzleImages/Dog2.3.jpg") {
+                img_bottom.src = "GamePuzzleImages/Dog3.3.jpg"
+            } else {
+                img_bottom.src = "GamePuzzleImages/Dog1.3.jpg"
+            }
+        }
+        if (img_top.getAttribute("src") == "GamePuzzleImages/Dog1.1.jpg" && img_middle.getAttribute("src") == "GamePuzzleImages/Dog1.2.jpg" && img_bottom.getAttribute("src") == "GamePuzzleImages/Dog1.3.jpg") {
+            document.getElementById("container").style.borderColor="red";
+            document.getElementById("container").style.borderStyle="solid";
+        }
+        if (img_top.getAttribute("src") == "GamePuzzleImages/Dog2.1.jpg" && img_middle.getAttribute("src") == "GamePuzzleImages/Dog2.2.jpg" && img_bottom.getAttribute("src") == "GamePuzzleImages/Dog2.3.jpg") {
+            document.getElementById("container").style.borderColor="blue";
+            document.getElementById("container").style.borderStyle="solid";
+        }
+        if (img_top.getAttribute("src") == "GamePuzzleImages/Dog3.1.jpg" && img_middle.getAttribute("src") == "GamePuzzleImages/Dog3.2.jpg" && img_bottom.getAttribute("src") == "GamePuzzleImages/Dog3.3.jpg") {
+            document.getElementById("container").style.borderColor="yellow";
+            document.getElementById("container").style.borderStyle="solid";
+        }
+    }
+</script>
+</body>
+</html>

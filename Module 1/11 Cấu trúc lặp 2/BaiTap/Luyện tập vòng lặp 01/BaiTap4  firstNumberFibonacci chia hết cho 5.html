@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 id = "result"></h3>
+<script>
+    let num1=0,num2=1,num3;
+    let result = document.getElementById("result");
+    for (i=0;i<20;i++) {
+        num3 = num1 +num2;
+        num1 = num2;
+        num2 = num3;
+        if (num3%5===0) {break;}
+    }
+    result.innerHTML = "So Fibonacci dau tien chia het cho 5 la:"+num3;
+</script>
+</body>
+</html>

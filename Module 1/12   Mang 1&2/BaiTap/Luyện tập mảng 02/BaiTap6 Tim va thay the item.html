@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Insert your string</label>
+<input id="input">
+<button id="button" onclick="change();">Change</button>
+<div id="display"></div>
+<script>
+
+    function change() {
+        let inputString = document.getElementById("input").value;
+        let array = inputString.split("");
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] == "-") {
+                array[i] = "_";
+            }
+        }
+        document.getElementById("display").innerHTML = "Chuoi cua ban la: " + array.join("");
+    }
+
+</script>
+</body>
+</html>

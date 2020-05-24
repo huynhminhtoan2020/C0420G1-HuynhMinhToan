@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt('input your String :');
+    function isPalindrome(str1) {
+        let arr = str1.split('');
+        let str2 = str1;
+        arr.reverse();
+        str1 = arr.join('');
+        if (str1==str2) {
+            return true;
+        } else
+            return false;
+    }
+    if (isPalindrome(str)) {alert('Doi Xung!!')}
+    else alert('NO');
+</script>
+</body>
+</html>

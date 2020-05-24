@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label> Find V: </label>
+<input id="input">
+<button type="button" id="button" onclick="findV();">Submit</button>
+<br>
+<div id="display"></div>
+<script>
+    let array = [1,5,4,6,8,10,12,14,18,17,16,19,20,24,10,88,90];
+    function findV() {
+    let num = document.getElementById("input").value;
+    let index = 0;
+    for (let i = 0;i<array.length;i++){
+        if (array[i] == num){
+            index = i;
+            document.getElementById("display").innerHTML = "V is in the array, at index: " + index ;
+            break;
+         } else {
+            document.getElementById("display").innerHTML = "V is not in the array";
+    }
+
+    } }
+
+</script>
+</body>
+</html>

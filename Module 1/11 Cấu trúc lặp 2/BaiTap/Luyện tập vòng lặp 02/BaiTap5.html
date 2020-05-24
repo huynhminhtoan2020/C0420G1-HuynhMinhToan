@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienGoc = parseInt(prompt("Nhap so tien ban dau"));
+    let tienPhaiTra = tienGoc;
+    let soThang = parseInt(prompt("Nhap so thang cho vay"));
+    let r = parseInt(prompt("Nhap lai suat hang thang (%)"));
+    temp = 0;
+    let i = 1;
+    while (i <= soThang) {
+        temp = tienPhaiTra * (1 + r/100)
+        tienPhaiTra = temp;
+        i++;
+    }
+    let tienLai = (tienPhaiTra - tienGoc).toFixed(2);
+    alert("Tien lai phai tra: " + tienLai);
+</script>
+</body>
+</html>

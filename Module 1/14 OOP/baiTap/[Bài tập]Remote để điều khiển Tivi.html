@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập]Remote để điều khiển Tivi</title>
+    <style>
+        .tivi {
+            width : 600px;
+            height : 400px;
+            position : absolute;
+            z-index : 10;
+        }
+        .remote {
+            margin-left: 700px;
+            margin-top : 200px;
+            position : absolute;
+        }
+        .button {
+            width : 130px;
+        }
+        .display {
+            width : 500px;
+            height: 350px;
+            top : 10px;
+            left: 10px;
+            position : absolute;
+            z-index : 9;
+        }
+        .youtube {
+            top: 409px;
+            left: 25px;
+            position: absolute;
+            z-index: 8;
+        }
+        }
+        }
+    </style>
+</head>
+<body>
+    <span><img src="purepng.webp" class="tivi"><span id="display" class="display"></span></span>
+    <span class="remote">
+        <button class="button" onclick="remote.turnOnOff(television)">Power</button><br><br>
+        <button class="button" onclick="remote.nextChannel(television)">nextChannel</button><br><br>
+        <button class="button" onclick="remote.preChannel(television)">preChannel</button><br><br>
+        <button class="button" onclick="remote.increaseVolume(television)">increaseVolume</button><br><br>
+        <button class="button" onclick="remote.decreaseVolume(television)">decreaseVolume</button>
+    </span>
+    <audio id="myAudio">
+        <source src="Anri - Last Summer Whisper.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        class Remote {
+            constructor(code) {
+                this.code = code;
+            }
+            nextChannel(tele) {
+                if ((tele.code == this.code)&&(tele.status)) {
+                    tele.channelOn++;
+                    if (tele.channelOn>tele.channel.length-1) {
+                        tele.channelOn = 0;
+                    }
+                    tele.showOn();
+                }
+            }
+            preChannel(tele) {
+                if ((tele.code == this.code)&&(tele.status)) {
+                    tele.channelOn--;
+                    if (tele.channelOn<0) {
+                        tele.channelOn = tele.channel.length-1;
+                    }
+                    tele.showOn();
+                }
+
+            }
+            increaseVolume(tele) {
+                let x = document.getElementById("myAudio");
+                if ((tele.code == this.code)&&(tele.status)) {
+                    if (tele.volume<1) {tele.volume += 0.05;}
+                    x.volume = tele.volume;
+                }
+            }
+            decreaseVolume(tele) {
+                let x = document.getElementById("myAudio");
+                if ((tele.code == this.code)&&(tele.status)) {
+                    if (tele.volume>0) {tele.volume -= 0.05;}
+                    x.volume = tele.volume;
+                }
+            }
+            turnOnOff(tele) {
+                if (tele.code == this.code) {
+                    if (tele.status) {
+                        tele.status = false;
+                        tele.showOff();
+                    } else {
+                        tele.status = true;
+                        tele.showOn();
+                    }
+                }
+            }
+        }
+        class Television {
+            constructor(code,channelOn,volume,status) {
+                this.code = code;
+                this.channel = ['HBO.gif','Harry.gif','Marvel.gif','transformer.gif','Dragonball.gif'];
+                this.channelOn = channelOn;
+                this.volume = volume;
+                this.status = status;
+            }
+            showOn() {
+                let x = document.getElementById("myAudio");
+                if (this.status) {
+                    let display = document.getElementById('display');
+                    let img = '<img src="'+this.channel[this.channelOn]+'" class="display">';
+                    display.innerHTML = img;
+                    x.play();
+                    x.volume = this.volume;
+                }
+            }
+            showOff() {
+                let x = document.getElementById("myAudio");
+                let display = document.getElementById('display');
+                let img = '';
+                display.innerHTML = img;
+                x.pause();
+            }
+        }
+        let remote = new Remote('SamSung');
+        let television = new Television('SamSung',0,0.5,false);
+    </script>
+</body>
+</html>

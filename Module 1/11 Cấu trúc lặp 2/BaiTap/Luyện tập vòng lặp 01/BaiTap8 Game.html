@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Ban muon doan so tu(from):")*1;
+    let b = prompt("Ban muon doan so den(to):")*1;
+    let ran = Math.round(Math.random()*(b-a))+a;
+    for (let i=0;i<=3;i++){
+        if (i===3){alert("BAN DA HET QUYEN LUA CHON");break;}
+        let num = prompt("Chon so cua ban:")*1;
+        if (num>ran) {alert("SO BAN NHAP LON HON");}
+        else if (num<ran) {alert("SO BAN NHAP BE HON");}
+        else if (num == ran) {alert("BAN DA CHON DUNG");break;}
+    }
+</script>
+</body>
+</html>

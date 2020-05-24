@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me?</title>
+    <style>
+        button {
+            width: 100px;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+<h1 style="position: absolute; left: 220px; top: 175px;">Do You Love Me?</h1>
+<button type="button" id="yes" onclick="alert('Yes! you are perfect ^-^ !!')" style="position:absolute; left:265px; top:245px;">Yes</button>
+<button type="button" id="no" onmouseover="x();" style="position: absolute; left: 360px; top: 245px;">No</button>
+
+<script>
+    function x() {
+        var a = Math.round(Math.random() * window.innerWidth);
+        var b = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("no").style.left = a + "px";
+        document.getElementById("no").style.top = b + "px";
+    }
+</script>
+</body>
+</html>
