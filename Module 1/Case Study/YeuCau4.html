@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YeuCau4</title>
+</head>
+<body>
+<script>
+    let arrayNewCustomer = [];
+    while (true){
+    let choose = parseInt(prompt("1. Add New Customer " + "\n" + "2. Delete Customer " ));
+    switch (choose) {
+        case 1: {
+    let num = parseInt(prompt("How Much Customer do you want to add?"));
+        for (let i =0; i<num;i++) {
+           let NameCustomer = prompt(" Enter Customer's Name");
+           arrayNewCustomer.push(NameCustomer);
+        }
+        let result = "";
+        arrayNewCustomer.sort();
+        // arrayNewCustomer.reverse();
+        for (let i =0; i<arrayNewCustomer.length;i++){
+           result+="No"+ (i+1)+ ". "+ arrayNewCustomer[i] + "\n";
+            }
+            alert(result);
+            break;
+        }
+                case 2:
+                    check = false;
+                    let deleteNameCustumer = prompt("Please Enter name's customer you want to delete");
+                    for (let i = 0;i<deleteNameCustumer.length;i++){
+                        if (arrayNewCustomer[i]=== deleteNameCustumer){
+                            arrayNewCustomer.splice(i,1);
+                            check = true
+                        }
+                    }
+                    if (!check){
+                        alert("Customer you want to delete don't have in the list")
+                    }
+                    let result = "";
+                    arrayNewCustomer.sort();
+                    for (let i =0; i<arrayNewCustomer.length;i++){
+                        result+="No"+ (i+1)+ ". "+ arrayNewCustomer[i] + "\n";
+                    }
+                    alert(result);
+                    break;
+    default : {
+        alert(" Failed ");
+             }
+        }
+    }
+</script>
+</body>
+</html>

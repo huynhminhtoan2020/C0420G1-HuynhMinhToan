@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yeuCau3</title>
+</head>
+<body>
+<script>
+    let yourName;
+    let idNumber;
+    let yourbirth;
+    let yourEmail;
+    let yourAdd;
+    let customerType;
+    let discount;
+    let rentDays;
+    let roomType;
+    let serviceType;
+    let check = false;
+    let tempName = " ";
+        yourName=prompt("Input Your Name");
+        yourName = yourName.trim().toLowerCase();
+        for (let i=0;i<yourName.length;i++){
+            if (yourName.charAt(i)===" "&& yourName.charAt(i+1) ===" " ){
+                continue;
+            }
+            if (i===0 || yourName.charAt(i-1)===" "){
+                tempName+=yourName.charAt(i).toUpperCase();
+                continue;
+            }
+            tempName+=yourName.charAt(i);
+        }
+        yourName = tempName;
+             do {
+        idNumber=prompt("Input Your ID number");
+        if (!isNaN(idNumber)){
+            idNumber =Number.parseFloat(idNumber);
+        }
+        if (!Number.isInteger(idNumber)){
+            alert("Your number isn't integer");
+            continue;
+        }
+        if (idNumber<10000000 || idNumber>99999999){
+            alert("Your number isn't integer");
+            continue;
+        } else {
+            check = true;
+        }
+    } while (!check);
+    check = false;
+    do {
+        yourbirth=prompt(" Input Your Birth");
+        if (yourbirth.charAt(2)==="/"&& yourbirth.charAt(5)==="/"){
+            let day = yourbirth.substring(0,2);
+            let month = yourbirth.substring(3,5);
+            let year = yourbirth.substring(6,10);
+            if (!isNaN(day)&&!isNaN(month)&&!isNaN(year)){
+                day = Number.parseFloat(day);
+                month = Number.parseFloat(month);
+                year = Number.parseFloat(year);
+             if(Number.isInteger(day)&& Number.isInteger(month) && Number.isInteger(year)){
+                 if (day<32 && month<13 && year>1900) {
+                     check = true;
+                 }
+             }
+            }
+        }
+        if(!check) {
+            alert(" your birthday is wrong format");
+        }
+    } while (!check);
+    check = false;
+    do {
+        let countAt = 0;
+        let countDot =0;
+        yourEmail=prompt(" Input Your Email");
+        for (let i =0;i<yourEmail.length;i++){
+            if (yourEmail.charAt(i)=== "@" ){
+                countAt++;
+                for (j=i+1;j<yourEmail.length;j++){
+                    if (yourEmail.charAt(j)==="."){
+                        countDot++;
+                    }
+                }
+            }
+        }
+        if (countAt!=1 || countDoc<1){
+            alert("Your Email is wrong");
+        } else {
+            check = true;
+        }
+    } while (!check);
+    check = false;
+    yourAdd=prompt(" Input Your Address");
+    serviceType = prompt("Service Type");
+    customerType=prompt("Input Your Customer");
+        do {
+        discount=prompt("Input Your Discount");
+        if (!isNaN(discount)){
+            discount = Number.parseFloat(discount);
+            if (Number.isInteger(discount) && discount >0){
+                check = true;
+            }
+        }
+        if (!check){
+            alert("your discount is wrong");
+        }
+    }while (!check);
+    check = false;
+    qualityservice=prompt("Input Your QualityService");
+    do {
+        rentDays=prompt("Input RentDays");
+        if (!isNaN(rentDays)){
+            rentDays = Number.parseFloat(rentDays);
+            if (Number.isInteger(rentDays)&& rentDays>0){
+                check = true;
+            }
+        }
+        if (!check){
+            alert("RentDays is wrong format");
+        }
+    } while (!check);
+    check = false
+        roomType=prompt("Input Room Type");
+    </script>
+</body>
+</html>

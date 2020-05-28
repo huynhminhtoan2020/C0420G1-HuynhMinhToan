@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yeuCau5</title>
+</head>
+<body>
+<script>
+    let arrayListCustomer = [];
+    function displayMainMenu() {
+    let choose = parseInt(prompt("1. Add New Customer" + "\n"+
+        "2. Display Information Customer." + "\n"+
+        "3. Edit Information Customer." +"\n" +
+        "4. Delete Customer." +"\n" +
+        "5. Exit." ));
+    switch (choose) {
+    case 1: {
+        addNewCustomer();
+        break;
+    }
+    case 2:{
+        displayCustomer();
+        break;
+    }
+    case 3: {
+        editCustomer();
+         break;
+        }
+    case 4:{
+        deleteCustomer();
+         break;
+        }
+    case 5:{
+        exit();
+        break;
+    }
+    default:{
+        alert("Failed");
+    }
+    }
+    }
+    function exit() {
+    let check = parseInt(prompt("Do You Want to Exit"+"\n"+"1. Yes I want"+"\n"+"2. No. I don't Want"));
+    if(check===1){
+        alert("Thank & See you soon");
+    } else {
+        alert("Hi. Pls try again");
+    }
+    displayMainMenu();
+    }
+    function deleteCustomer() {
+        let temp = " ";
+        for (let i=0;i<arrayListCustomer.length;i++){
+            temp+=i +". Name: "+arrayListCustomer[i][0]+"\n";
+        }
+        let chooseDelete = parseInt(prompt(temp));
+        let check = parseInt(prompt("Are you sure You want to delete customer "+"\n" +
+            "1. Yes" +"2. No"));
+        if (check===1){
+            arrayListCustomer.splice(chooseDelete,1);
+            alert("Done!")
+        } else {
+            alert("Cancel");
+        }
+        displayMainMenu()
+    }
+    function addNewCustomer() {
+        let cusInfo =[];
+        let yourName=prompt("Input Your Name");
+        let  yourEmail=prompt(" Input Your Email");
+        let   yourbirth=prompt(" Input Your Birth");
+        let  discount=prompt("Input Your Discount");
+        let  customerType=prompt("Input Your Customer");
+        let  roomType=prompt("Input Room Type");
+        let  rentDays=prompt("Input RentDays");
+        cusInfo.push(yourName);
+        cusInfo.push(yourbirth);
+        cusInfo.push(yourEmail);
+        cusInfo.push(customerType);
+        cusInfo.push(discount);
+        cusInfo.push(rentDays);
+        cusInfo.push(roomType);
+        arrayListCustomer.push(cusInfo);
+        alert(" well done! Great ");
+    }
+    displayMainMenu();
+    function displayCustomer() {
+        let temp = " ";
+        for (let i=0;i<arrayListCustomer.length;i++){
+            temp+=i +". Name: "+arrayListCustomer[i][0]+"\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        alert("Name is: " + arrayListCustomer[chooseDisplay][0] + "\n" +
+            "Email is: " + arrayListCustomer[chooseDisplay][1] + "\n" +
+            "Birth: " + arrayListCustomer[chooseDisplay][2] + "\n" +
+            "Discount: " + arrayListCustomer[chooseDisplay][3] + " %" + "\n" +
+            "CustomerType: " + arrayListCustomer[chooseDisplay][4] + "\n" +
+            "Room Type: " + arrayListCustomer[chooseDisplay][5] + "\n" +
+            "RentDays: " + arrayListCustomer[chooseDisplay][6] + " Days");
+    }
+    displayMainMenu();
+    function editCustomer() {
+        let temp = " ";
+        for (let i=0;i<arrayListCustomer.length;i++){
+            temp+=i +". Name: "+arrayListCustomer[i][0]+"\n";
+        }
+        let chooseDisplay = parseInt(prompt(temp));
+        let chooseEdit = parseInt(prompt("1. Name is: " +  arrayListCustomer[chooseDisplay][0] + "\n" +
+            "2. Email is: " + arrayListCustomer[chooseDisplay][1] + "\n" +
+            "3. Birth: " +  arrayListCustomer[chooseDisplay][2]  + "\n" +
+            "4. Discount: " +  arrayListCustomer[chooseDisplay][3] + "%" + "\n" +
+            "5. CustomerType: " + arrayListCustomer[chooseDisplay][4] + "\n" +
+            "6. Room Type: " + arrayListCustomer[chooseDisplay][5] + "\n" +
+            "7. RentDays: " + arrayListCustomer[chooseDisplay][6] + "Days"));
+        switch (chooseEdit) {
+            case 1: {
+                arrayListCustomer[chooseDisplay][0] = prompt(" Edit your Name ");
+            }
+                break;
+            case 2: {
+                arrayListCustomer[chooseDisplay][1] = prompt("Edit your Email");
+                break;
+            }
+            case 3: {
+                arrayListCustomer[chooseDisplay][2] = prompt("Edit your Birth");
+                break;
+            }
+            case 4:{
+                arrayListCustomer[chooseDisplay][3] = prompt("New Discount");
+                break;
+            }
+            case 5:{
+                arrayListCustomer[chooseDisplay][4] = prompt("New Customer Type");
+                break;
+            }
+            case 6:{
+                arrayListCustomer[chooseDisplay][5] = prompt("New Room Type");
+                break;
+            }
+            case 7:{
+                arrayListCustomer[chooseDisplay][6] = prompt("Edit new Rent Days");
+                break;
+            }
+            default:{
+                alert("You are wrong, Please choose again");
+            }
+        }
+        editCustomer();
+         }
+    displayMainMenu();
+
+</script>
+</body>
+</html>

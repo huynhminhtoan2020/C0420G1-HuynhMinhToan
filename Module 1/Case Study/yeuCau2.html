@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let yourName = "Toan";
+    let idNumber;
+    let yourbirth = "1990,10,10";
+    let yourEmail = "toan@gmail.com";
+    let yourAdd = "Da Nang";
+    let customerType =" Diamond ";
+    let discount = "10";
+    let qualityservice;
+    let rentDays ="10";
+    let roomType = " Villa";
+    let totalPay;
+    let serviceType;
+let choose = parseInt(prompt("1. Show information customer." +"\n" + "2. Edit Information Customer."+ "\n"+"3. Show the amount to be paid after discount."));
+ switch (choose) {
+     case 1: {
+         alert("Name is: " + yourName + "\n" + "Email is: " + yourEmail + "\n" + "Birth: " + yourbirth + "\n" +
+             "Discount: " + discount + "%" + "\n" + "CustomerType: " + customerType + "\n" + "Room Type: " + roomType + "\n" +
+              "RentDays: " + rentDays + "Days");
+         break;
+     }
+     case 2: {
+         let chooseEdit = parseInt(prompt("1. Name is: " + yourName + "\n" +
+             "2. Email is: " + yourEmail + "\n" +
+             "3. Birth: " + yourbirth + "\n" +
+             "4. Discount: " + discount + "%" + "\n" +
+             "5. CustomerType: " + customerType + "\n" +
+             "6. Room Type: " + roomType + "\n" +
+             "7. RentDays: " + rentDays + "Days"));
+         switch (chooseEdit) {
+             case 1: {
+                 name = prompt(" Edit your Name ");
+                 alert("Name is: " + name + "\n" + "Email is: " + yourEmail + "\n" + "Birth: " + yourbirth + "\n" +
+                     "Discount: " + discount + "%" + "\n" + "CustomerType: " + customerType + "\n" +
+                     "Room Type: " + roomType + "\n" +
+                     "RentDays: " + rentDays + "Days");
+             }
+                 break;
+             default: {
+                 alert("Failed")
+             }
+          case 2: {
+         Email = prompt("Edit your Email");
+              alert("Name is: " + yourName + "\n" + "Email is: " + Email + "\n" + "Birth: " + yourbirth + "\n" +
+                  "Discount: " + discount + "%" + "\n" + "CustomerType: " + customerType + "\n" +
+                  "Room Type: " + roomType + "\n" +
+                  "RentDays: " + rentDays + "Days");
+      }
+         break;
+            case 3: {
+            Birth = prompt("Edit your Birth");
+                alert("Name is: " + yourName + "\n" + "Email is: " + yourEmail + "\n" + "Birth: " + Birth + "\n" +
+                    "Discount: " + discount + "%" + "\n" + "CustomerType: " + customerType + "\n" +
+                    "Room Type: " + roomType + "\n" +
+                    "RentDays: " + rentDays + "Days");
+        }
+              break;
+             case 4:{
+                 Discount = prompt("New Discount");
+                 alert("Name is: " + yourName + "\n" + "Email is: " + yourEmail + "\n" + "Birth: " + yourbirth + "\n" +
+                     "Discount: " + Discount + "%" + "\n" + "CustomerType: " + customerType + "\n" +
+                     "Room Type: " + roomType + "\n" +
+                     "RentDays: " + rentDays + "Days");
+             }
+             break;
+             case 5:{
+                 CustomerType = prompt("New Customer Type");
+                 alert("Name is: " + yourName + "\n" + "Email is: " + yourEmail + "\n" + "Birth: " + yourbirth + "\n" +
+                     "Discount: " + discount + "%" + "\n" + "CustomerType: " + CustomerType + "\n" +
+                     "Room Type: " + roomType + "\n" +
+                     "RentDays: " + rentDays + "Days");
+             }
+             break;
+             case 6:{
+                 RoomType = prompt("New Room Type");
+                 alert("Name is: " + yourName + "\n" + "Email is: " + yourEmail + "\n" + "Birth: " + yourbirth + "\n" +
+                     "Discount: " + discount + "%" + "\n" + "CustomerType: " + customerType + "\n" +
+                     "Room Type: " + RoomType + "\n" +
+                     "RentDays: " + rentDays + "Days");
+             }
+             break;
+             case 7:{
+                 RentDays = prompt("Edit new Rent Days");
+                 alert("Name is: " + yourName + "\n" + "Email is: " + yourEmail + "\n" + "Birth: " + yourbirth + "\n" +
+                     "Discount: " + discount + "%" + "\n" + "CustomerType: " + customerType + "\n" +
+                     "Room Type: " + roomType + "\n" +
+                     "RentDays: " + RentDays + "Days");
+             } break;
+ }
+     }
+     case 3:{
+         let money = 0;
+         if (roomType== "Villa"){
+             money = 500;
+         } else if (roomType == "House"){
+            money = 300;
+         } else if(roomType == "Room"){
+             money = 100;
+         } else {
+             money = 400;
+         }
+         let temp = 0;
+         if (yourAdd == "Da Nang"){
+             temp+=20;
+         } else if (yourAdd=="Hue"){
+             temp+=10;
+         } else if (yourAdd=="Quang Nam"){
+             temp+=5
+         }
+         if (rentDays>7){
+             temp+=30;
+         } else if (rentDays>5){
+             temp+=20;
+         } else if (rentDays>2){
+             temp+=10;
+         }
+         if (customerType == "Diamond"){
+             temp+=15;
+         } else if (customerType=="Platium"){
+             temp+=10;
+         } else if (customerType=="Gold"){
+             temp+=5;
+         }else if (customerType=="Silver"){
+             temp+=2;
+         } else {
+             temp+=0;
+         }
+         let currentYear = new Date().getFullYear();
+         let birthday = new Date(yourbirth).getFullYear();
+         let agecustumer = currentYear - birthday;
+         if (agecustumer>30){
+             temp+=2;
+         } else if (agecustumer>20){
+             temp+=1;
+         }
+         totalPay = (money*rentDays*(1-discount/100))-temp;
+          alert("TotalPay is: " + totalPay  + " USD" + "\n" + "Included:" + "\n" +
+             "Rent Days : " + rentDays + " Days" + "\n" + " Discount:"+ discount + "%" +"\n" +" Reduce: "+ temp + " USD");
+     } break;
+    default: {
+        alert(" Don't have on Menu")
+    }
+ }
+
+
+</script>
+</body>
+</html>

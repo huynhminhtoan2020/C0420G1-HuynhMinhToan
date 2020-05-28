@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yeuCau6</title>
+</head>
+<body>
+<script>
+    let Customer = function () {
+        this.setName = function (name) {
+            this.name = name;
+        }
+        this.getName = function () {
+            return this.name;
+        }
+        this.setbirthday = function (birthday) {
+            this.birthday = birthday;
+        }
+        this.getbirthday = function () {
+            return this.birthday;
+        }
+        this.setIdNumber = function (idnumber) {
+            this.idNumber = idnumber;
+        }
+        this.getIdNumber = function () {
+            return this.idNumber;
+        }
+        this.setEmail = function (email) {
+            this.email = email;
+        }
+        this.getEmail = function () {
+            return this.email;
+        }
+        this.getAddress = function () {
+            return this.address;
+        }
+        this.setAddress = function (address) {
+            this.address = address;
+        }
+        this.setRentDays = function (rentdays) {
+            this.rentDays = rentdays;
+        }
+        this.getRentDays = function () {
+            return this.rentDays;
+        }
+        this.getServiceType = function () {
+            return this.serviceType;
+        }
+        this.setServiceType = function (servicetype) {
+            this.serviceType = serviceType;
+        }
+        this.getcustomerType = function () {
+            return this.customerType;
+        }
+        this.setCustomerType = function (customertype) {
+            this.customerType = customerType;
+        }
+        this.getRoomType = function () {
+            return this.roomType;
+        }
+        this.setroomType = function (roomType) {
+            this.roomType = roomType;
+        }
+
+        this.total = function () {
+            let reduce = 0;
+            let curentYear = new Date().getFullYear();
+            let temp = new Date(this.birthday).getFullYear();
+            let age = curentYear - temp;
+            let totalPay;
+            switch (this.address) {
+                case " Da Nang ":{
+                    if(age > 30){
+                        reduce +=22;
+                    }
+                    if(age > 20 && age <=30){
+                        reduce =+ 21;
+                    }
+                    break;
+                }
+                case "Hue ":{
+                    reduce +=10;
+                    break;
+                }
+                case "Quang Nam":{
+                    reduce +=5;
+                    break;
+                }
+            }
+            if(this.rentDays>7){
+                reduce +=30;
+            } else if(this.rentDays>=5){
+                reduce +=20;
+            } else if(this.rentDays>=2){
+                reduce +=10;
+            }
+            switch (this.customerType) {
+                case "Diamond":
+                    reduce +=15;
+                    break;
+                case "Platinum":
+                    reduce +=10;
+                    break;
+                case "Gold":
+                    reduce +=5;
+                    break;
+                case "Silver":
+                    reduce +=2;
+                    break;
+                case "Member":
+                    reduce += 0;
+            }
+            switch (this.serviceType) {
+                case "Villa":{
+                    totalPay = (500*this.rentDays*(1-discount/100)-reduce);
+                    break;
+                }
+                case "House":{
+                    totalPay = (300*this.rentDays*(1-discount/100)-reduce);
+                    break;
+                }
+                case "Room":{
+                    totalPay = (100*this.rentDays*(1-discount/100)-reduce);
+                    break;
+                }
+            }
+            return totalPay;
+        }
+    }
+    let listCuctomer=[];
+    let arrayListCustomer = [];
+    function displayMainMenu() {
+        let choose = parseInt(prompt("1. Add New Customer" + "\n" +
+            "2. Display Information Customer." + "\n" +
+            "3. Display total pay of customer ." + "\n" +
+            "4. Edit Information Customer." + "\n" +
+            "5. Delete Customer." + "\n" +
+            "6. Exit."));
+        switch (choose) {
+            case 1: {
+                addNewCustomer();
+                break;
+            }
+            case 2: {
+                displayCustomer();
+                break;
+            }
+            case 3: {
+                displaytotalpay();
+                break;
+            }
+            case 4: {
+                editCustomer();
+                break;
+            }
+            case 5: {
+                deleteCustomer();
+                break;
+            }
+            case 6: {
+                exit();
+                break;
+            }
+            default: {
+                alert("Failed");
+            }
+        }
+    }
+        function addNewCustomer() {
+            let regexEmail = /\S+@\S+\.\S+/;
+            let checkValid = false;
+            let cus = new Customer();
+            let name=prompt("Input Your Name");
+            do {
+                let Email=prompt(" Input Your Email");
+                if (regexEmail.test(Email)){
+                    checkValid= true;
+                }else {
+                    alert("Please try  your Email again")
+                }
+            }
+            while (!checkValid);
+            checkValid = false;
+                let birth=prompt(" Input Your Birth");
+
+            let  discount=prompt("Input Your Discount");
+            let  customerType=prompt("Input Your Customer");
+            let  roomType=prompt("Input Room Type");
+            let  rentDays=prompt("Input RentDays");
+            cus.setName(name);
+            cus.setBirthday(birth);
+            cus.getEmail(Email);
+            cus.getDiscount(discount);
+            cus.getcustomerType(customerType);
+            cus.getRoomType(roomType);
+            cus.getRentDays(rentDays);
+            listCuctomer.push(cus);
+            alert("well done! great");
+            displayMainMenu();
+        }
+    displayMainMenu();
+
+</script>
+</body>
+</html>
