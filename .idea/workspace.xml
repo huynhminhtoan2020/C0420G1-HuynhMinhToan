@@ -1,38 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bdf6da7-6c06-4244-99bc-990d4c5b6d93" name="Default Changelist" comment="" />
+    <list default="true" id="e48a1b2c-2872-4945-8496-86aeb5eb0f45" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Module 2/src/bai7_Abstract_interface/thucHanh/bai2_InterfaceComparater/CircleComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module 2/src/bai7_Abstract_interface/thucHanh/bai2_InterfaceComparater/CircleCoparatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Module 2/src/bai7_Abstract_interface/thucHanh/bai2_InterfaceComparater/Comparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/C0420G1 - HUYNH MINH TOAN - 01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/Module 2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/News/Slide 1- 2 - 3  - Java Overview.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/News/[BC-JAVA-APJ]TKB Advanced programming with Java.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/META-INF/Module 2.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/BaiTap/Convert_Number_to_Words.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/BaiTap/Hello.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/BaiTap/changeMoney.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/ThucHanh/BodyMassIndexBMI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/ThucHanh/DayInMonth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/ThucHanh/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/ThucHanh/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/ThucHanh/firstDegreeEquation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/ThucHanh/leapYear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai1IntroduceJava/ThucHanh/variable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai2_LoopJava/BaiTap/_20SoNguyenToDauTien.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai2_LoopJava/BaiTap/menu_chon_hinh.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai2_LoopJava/ThucHanh/Menu_ung_dung.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai2_LoopJava/ThucHanh/greatest_Common_Divisor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai2_LoopJava/ThucHanh/lai_suat_ngan_hang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai2_LoopJava/ThucHanh/primeNumbe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai3_ArrayVaPhuongThuc/ThucHanh/daoNguocCacPhanTuCuaMang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai3_ArrayVaPhuongThuc/ThucHanh/timGiaTriTrongMang.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai5_AccessModifier/BaiTap/circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai5_AccessModifier/ThucHanh/Student$TestStaticMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai5_AccessModifier/ThucHanh/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai5_AccessModifier/ThucHanh/car$TestStaticProperty.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai5_AccessModifier/ThucHanh/car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai5_AccessModifier/ThucHanh/demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai5_AccessModifier/ThucHanh/privateMethod$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai5_AccessModifier/ThucHanh/privateMethod$Simple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai5_AccessModifier/ThucHanh/privateMethod.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap2_Lop_Point2D_Point3D/Point3D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap2_Lop_Point2D_Point3D/Point3DTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap2_Lop_Point2D_Point3D/point2D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap2_Lop_Point2D_Point3D/point2Dtest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap3_lop_Point_MovablePoint/MovablePoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap3_lop_Point_MovablePoint/MovablePointTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap3_lop_Point_MovablePoint/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap3_lop_Point_MovablePoint/PointTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap4_Triangle/Triangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/BaiTap4_Triangle/TriangleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/CircleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/Cylinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/BaiTap/CylinderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/ThucHanh/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/ThucHanh/CircleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/ThucHanh/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/ThucHanh/RectangleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/ThucHanh/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/ThucHanh/ShapeTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/ThucHanh/Square.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/out/production/Module 2/bai6_inheritance_KeThua/ThucHanh/SquareTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/BaiTap/Convert_Number_to_Words.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/BaiTap/Hello.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/BaiTap/changeMoney.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/ThucHanh/BodyMassIndexBMI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/ThucHanh/DayInMonth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/ThucHanh/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/ThucHanh/SystemTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/ThucHanh/firstDegreeEquation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/ThucHanh/leapYear.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai1IntroduceJava/ThucHanh/variable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai2_LoopJava/BaiTap/_20SoNguyenToDauTien.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai2_LoopJava/BaiTap/menu_chon_hinh.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai2_LoopJava/ThucHanh/Menu_ung_dung.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai2_LoopJava/ThucHanh/greatest_Common_Divisor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai2_LoopJava/ThucHanh/lai_suat_ngan_hang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai2_LoopJava/ThucHanh/primeNumbe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai3_ArrayVaPhuongThuc/ThucHanh/daoNguocCacPhanTuCuaMang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai3_ArrayVaPhuongThuc/ThucHanh/timGiaTriTrongMang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai5_AccessModifier/BaiTap/circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai5_AccessModifier/ThucHanh/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai5_AccessModifier/ThucHanh/car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai5_AccessModifier/ThucHanh/demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai5_AccessModifier/ThucHanh/privateMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap1_ LopCircle_lopCylinder/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap1_ LopCircle_lopCylinder/CircleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap1_ LopCircle_lopCylinder/Cylinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap1_ LopCircle_lopCylinder/CylinderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap2_Lop_Point2D_Point3D/Point3D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap2_Lop_Point2D_Point3D/Point3DTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap2_Lop_Point2D_Point3D/point2D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap2_Lop_Point2D_Point3D/point2Dtest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap3_lop_Point_MovablePoint/MovablePoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap3_lop_Point_MovablePoint/MovablePointTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap3_lop_Point_MovablePoint/Point.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap3_lop_Point_MovablePoint/PointTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap4_Triangle/Triangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/BaiTap/BaiTap4_Triangle/TriangleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/ThucHanh/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/ThucHanh/CircleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/ThucHanh/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/ThucHanh/RectangleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/ThucHanh/Shape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/ThucHanh/ShapeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/ThucHanh/Square.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai6_inheritance_KeThua/ThucHanh/SquareTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai7_Abstract_interface/thucHanh/AbstractAndInterfaceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai7_Abstract_interface/thucHanh/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai7_Abstract_interface/thucHanh/Tiger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module-2/src/bai7_Abstract_interface/thucHanh/chicken.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1b6fH4lUYkFaARaiQEXhcdhbDAV" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1d7fr5KWTVbyQHtGpJ2Q6jp6t9v" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Module 2/src/bai7_Abstract_interface/thucHanh/AbstractAndInterfaceTest.java" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5bdf6da7-6c06-4244-99bc-990d4c5b6d93" name="Default Changelist" comment="" />
-      <created>1587957375697</created>
+      <changelist id="e48a1b2c-2872-4945-8496-86aeb5eb0f45" name="Default Changelist" comment="" />
+      <created>1591781247256</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1587957375697</updated>
-      <workItem from="1587957384985" duration="206000" />
-      <workItem from="1587957659943" duration="296000" />
+      <updated>1591781247256</updated>
+      <workItem from="1591781249879" duration="57000" />
+      <workItem from="1591781382394" duration="244000" />
+      <workItem from="1591781645292" duration="19000" />
+      <workItem from="1591840658129" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="121" y="0" key="#Project_Structure" timestamp="1591781263752">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="121" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1591781263752" />
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1591781616009">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1591781616009" />
+    <state x="91" y="0" key="new project wizard" timestamp="1591781445700">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1591781445700" />
   </component>
 </project>
